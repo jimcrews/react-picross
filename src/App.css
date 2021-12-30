@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.picross-app {
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.picross-app .picross-block {
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  background-color: #485160;
+  border: 2px solid #485160;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+  text-transform: lowercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.picross-app .picross-block-selected {
+  background-color: #85a4db;
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  border: 2px solid #485160;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+  text-transform: lowercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.picross-app .picross-block-empty {
+  background-color: #ffffff;
+  height: 15px;
+  width: 15px;
+  border-radius: 0;
+  border: 2px solid #485160;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+  text-transform: lowercase;
 }
 
-.App-link {
-  color: #61dafb;
+.picross-app .picross-block:hover {
+  background-color: #57606f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picross-app .picross-hint-y {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20px;
 }
