@@ -2,12 +2,25 @@ var dimensionWidth = 10;
 var dimensionHeight = 10;
 
 var solution = [];
-
+/*
 for (var i = 0; i < dimensionHeight; i++) {
   solution[i] = [];
   for (var j = 0; j < dimensionWidth; j++) {
     var random = Math.floor(Math.random() * 2);
     solution[i][j] = random;
+  }
+}*/
+const probability = [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+//const random = Math.floor(Math.random() * probability.length);
+//console.log(random, probability[random]);
+
+for (var i = 0; i < dimensionHeight; i++) {
+  solution[i] = [];
+  for (var j = 0; j < dimensionWidth; j++) {
+    const random = Math.floor(Math.random() * probability.length);
+    console.log(probability[random]);
+    solution[i][j] = probability[random];
   }
 }
 
